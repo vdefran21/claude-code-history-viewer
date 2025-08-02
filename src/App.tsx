@@ -138,7 +138,13 @@ function App() {
   };
 
   const handleSearchResultClick = (result: SearchResult) => {
-    loadSession(result.project, result.session, result.messageUuid);
+    // Clear the highlight first to ensure the effect triggers even for the same message
+    setHighlightMessageUuid(null);
+    
+    // Use a small delay to ensure the state change is processed
+    setTimeout(() => {
+      loadSession(result.project, result.session, result.messageUuid);
+    }, 50);
   };
 
   const handleHome = () => {

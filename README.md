@@ -16,6 +16,14 @@ A modern web application for viewing Claude conversation history with a clean Ma
 - ✨ Message highlighting and auto-scroll to search results
 - 🐍 No Python dependencies - pure Node.js
 
+## Demo
+
+### Basic Navigation
+![Basic Navigation](docs/images/navigation-demo.gif)
+
+### Search Functionality
+![Search Feature](docs/images/search-demo.gif)
+
 ## Quick Start
 
 ```bash
